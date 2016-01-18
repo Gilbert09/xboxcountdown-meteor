@@ -1,0 +1,10 @@
+<div id="container">
+    <div class="item {{game.console}}" ng-repeat="game in games" isotope>
+        <img style="padding: 5px;" src="img/{{game.img}}"  width="290" height="200" />
+        <div style="padding: 0 10px 10px 10px;">
+            <span class="large title-overflow" ng-bind="game.name"></span>
+            <span class="italic small {{game.console}}" ng-bind="game.console"></span>
+            <span class="time"></span>
+        </div>
+    </div>
+</div>
